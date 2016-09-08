@@ -1,0 +1,22 @@
+{
+  "name": "alltrapnation-view",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apjames93/alltrapnation-view.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apjames93/alltrapnation-view/issues"
+  },
+  "homepage": "https://github.com/apjames93/alltrapnation-view#readme",
+  "dependencies": {
+    "node-sass": "^3.9.3"
+  }
+}
