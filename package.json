@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/apjames93/alltrapnation-view#readme",
   "dependencies": {
+    "gitignore": "^0.6.0",
     "node-sass": "^3.9.3"
   }
 }
