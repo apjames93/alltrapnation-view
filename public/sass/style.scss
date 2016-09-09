@@ -1,6 +1,4 @@
 @import 'color';
-@import 'rightPortal';
-@import 'sidenav';
 
 .container-fluid{
   padding: 0px;
@@ -23,3 +21,6 @@ button{
   width: 100%;
 }
 @import 'mobileNav';
+@import 'footer';
+@import 'rightPortal';
+@import 'sidenav';

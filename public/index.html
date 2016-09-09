@@ -12,13 +12,20 @@
     <base href="/">
     </head>
     <body>
+
+
       <div class="container-fluid">
+      <div class="row">
         <side-nav></side-nav>
         <top-name></top-name>
         <right-portal></right-portal>
+      <div class="col-xs-12 col-sm-offset-3 col-sm-9 content">
         <div ui-view></div>
+      </div>
+        <portal-footer></portal-footer>
     </div>
-    <nav-mobile></nav-Mobile>
+    </div>
+  <nav-mobile></nav-Mobile>
 
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
@@ -41,6 +48,10 @@
     <!-- topName -->
     <script type="text/javascript" src="/componets/topName/topName.js"></script>
     <script type="text/javascript" src="/componets/topName/topName-directive.js"></script>
+
+    <!-- footer -->
+    <script type="text/javascript" src="/componets/footer/footer.js"></script>
+    <script type="text/javascript" src="/componets/footer/footer-directive.js"></script>
 
     <!-- album cover -->
     <script type="text/javascript" src="/componets/albumcover/albumcover.js"></script>

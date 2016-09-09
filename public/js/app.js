@@ -7,6 +7,7 @@
      'alltrapnation.rightportal',
      'alltrapnation.mobileNav',
      'alltrapnation.topName',
+     'alltrapnation.footer',
      'alltrapnation.albumecover'
    ])
 
