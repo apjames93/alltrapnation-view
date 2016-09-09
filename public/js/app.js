@@ -5,6 +5,8 @@
      'ui.router',
      'alltrapnation.sidenav',
      'alltrapnation.rightportal',
+     'alltrapnation.mobileNav',
+     'alltrapnation.topName',
      'alltrapnation.albumecover'
    ])
 
