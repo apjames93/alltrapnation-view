@@ -2,7 +2,9 @@
 (function(){
   angular
     .module('alltrapnation',[
-     'ui.router'
+     'ui.router',
+     'alltrapnation.sidenav',
+     'alltrapnation.rightportal'
    ])
 
    .run([
@@ -20,6 +22,14 @@
           url: '/',
           templateUrl: '/templates/home.html'
           // controller: 'homeController'
+        })
+        .state('art', {
+          url: '/art',
+          templateUrl: '/templates/art.html'
+        })
+        .state('about', {
+          url: '/about',
+          templateUrl: '/templates/about.html'
         });
       });
 })();

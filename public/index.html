@@ -2,7 +2,7 @@
 <html ng-app="alltrapnation">
   <head>
     <meta charset="utf-8">
-    <title>Alex James Portfolio</title>
+    <title>alltrapnation</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css" media="screen" charset="utf-8">
@@ -12,8 +12,28 @@
     <base href="/">
     </head>
     <body>
+      <side-nav></side-nav>
 
-        <div ui-view></div>
+<right-portal></right-portal>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div ui-view></div>
 
 
     <!--Scripts-->
@@ -25,6 +45,12 @@
 
     <script type="text/javascript" src="./js/app.js"></script>
 
-  
+    <!-- nav -->
+    <script type="text/javascript" src="/componets/sidenav/sidenav.js"></script>
+    <script type="text/javascript" src="/componets/sidenav/sidenav-directive.js"></script>
+
+    <script type="text/javascript" src="/componets/rightportal/rightportal.js"></script>
+    <script type="text/javascript" src="/componets/rightportal/rightportal-directive.js"></script>
+
   </body>
 </html>
