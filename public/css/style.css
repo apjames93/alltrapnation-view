@@ -9,7 +9,7 @@ html {
   padding: 0px; }
 
 body {
-  background-color: #EBF5EE; }
+  background-color: #F5F5F5; }
 
 h1 {
   font-size: 1.3em;
@@ -26,11 +26,8 @@ button {
 .sidenav {
   position: fixed;
   height: 100%;
-  background-color: #EBF5EE;
+  background-color: #F5F5F5;
   color: #2C302E;
-  -webkit-box-shadow: 7px 0px 15px 0px rgba(10, 17, 40, 0.28);
-  -moz-box-shadow: 7px 0px 15px 0px rgba(10, 17, 40, 0.28);
-  box-shadow: 7px 0px 15px 0px rgba(10, 17, 40, 0.28);
   overflow-y: scroll;
   z-index: 1;
   padding: 0px; }
@@ -47,7 +44,8 @@ button {
 .logo-img {
   height: 10em;
   width: auto;
-  margin-left: .6em; }
+  margin-left: .6em;
+  margin-top: .5em; }
 
 .logo-svg {
   height: 100%;
@@ -66,7 +64,7 @@ button {
 
 .links {
   position: relative;
-  background-color: #EBF5EE;
+  background-color: #F5F5F5;
   height: 100%;
   width: 100%;
   border: none;
@@ -77,11 +75,11 @@ button {
 .links:hover {
   cursor: pointer;
   background-color: #2C302E;
-  color: #EBF5EE;
+  color: #F5F5F5;
   text-decoration: none; }
 
 .links:focus {
-  background-color: #EBF5EE;
+  background-color: #F5F5F5;
   color: #2C302E;
   outline: 0;
   text-decoration: line-through; }
@@ -91,7 +89,7 @@ button {
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #EBF5EE; }
+  background-color: #F5F5F5; }
 
 .bottom-nav-container a button {
   height: 60px;
@@ -102,7 +100,7 @@ button {
 
 .bottom-links {
   position: relative;
-  background-color: #EBF5EE;
+  background-color: #F5F5F5;
   border: none;
   color: #2C302E;
   transition: background-color .4s ease;
@@ -114,9 +112,9 @@ button {
     text-decoration: none;
     padding: 0;
     margin-right: 15px;
-    color: #EBF5EE; }
+    color: #F5F5F5; }
   .bottom-links:focus {
-    background-color: #EBF5EE;
+    background-color: #F5F5F5;
     color: #2C302E;
     outline: 0;
     text-decoration: line-through; }
@@ -138,15 +136,20 @@ button {
 .logo-img-top {
   height: 25%;
   width: 25%;
-  float: right;
-  margin-right: 2em; }
+  align-items: center; }
 
 .footer {
-  background-color: #EBF5EE;
-  margin-bottom: 60px; }
+  background-color: #474A48;
+  margin-bottom: 0px;
+  position: absolute;
+  z-index: 2;
+  color: #F5F5F5;
+  height: 2em;
+  text-align: center;
+  padding: 0;
+  width: 100%; }
 
 .footer-svg {
-  height: 73px;
   position: relative; }
 
 .bottom-portal-svg {
@@ -161,51 +164,69 @@ button {
 .right-portal {
   position: relative;
   display: block;
-  width: 10%;
-  height: 50%;
+  height: 2em;
+  width: auto;
   text-align: center;
   padding: 0px;
   margin: 0px;
-  margin-top: .5em; }
+  margin-top: .5em;
+  z-index: 1; }
 
 .pull-right {
   float: right !important; }
 
 .portal-box {
-  height: 100%;
-  width: 30%; }
-
-.card-container {
-  padding: 0;
-  margin: 2em; }
-
-.card-img-top {
-  height: auto;
-  width: 100%;
-  opacity: 1;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-  height: 45%;
-  background-image: url("http://nme.assets.ipccdn.co.uk/images/2015EaglesOfDeathMetal_EODM_ZipperDown_170615.article_x4.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.card-img-top:hover {
-  cursor: pointer;
-  opacity: 0.5; }
-
-.card {
-  vertical-align: middle;
+  height: 2em;
   width: auto; }
 
-.card:hover {
+.svg-portal {
+  height: 2em;
+  width: auto;
+  float: right !important; }
+
+.svg-portal:hover {
+  fill: white; }
+
+.right-svg-box {
+  background-color: #F5F5F5;
+  padding-left: 0;
+  padding-right: 0; }
+
+.right-svg-box:hover {
+  background: #2C302E; }
+
+.right-portal-box {
+  position: relative;
+  left: 15%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.albumcover-box {
+  position: relative;
+  display: block;
+  align-content: center;
+  margin-bottom: 1em;
+  height: auto;
+  width: auto;
+  padding-left: 0px;
+  padding-right: 0px !important; }
+
+.albumcover-box:hover {
   cursor: pointer;
   -webkit-box-shadow: 14px 20px 34px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 14px 20px 34px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 14px 20px 34px 0px rgba(0, 0, 0, 0.75); }
 
-.albumBackground {
-  background-image: url("https://nme.assets.ipccdn.co.uk/images/2015EaglesOfDeathMetal_EODM_ZipperDown_170615.article_x4.jpg");
-  background-repeat: no-repeat; }
+.album-img {
+  height: auto;
+  width: 100%;
+  opacity: 1;
+  padding-right: 0;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out; }
+
+.album-img:hover {
+  cursor: pointer;
+  opacity: 0.5; }

@@ -1,9 +1,16 @@
 .footer {
-  background-color: $white;
-  margin-bottom: 60px;
+  background-color: $gray;
+  margin-bottom: 0px;
+  position: absolute;
+  z-index: 2;
+  color: $white;
+  height: 2em;
+  text-align: center;
+  // bottom: 0;
+  padding: 0;
+  width: 100%;
 }
 .footer-svg {
-  height: 73px;
   position: relative;
 }
 .bottom-portal-svg{

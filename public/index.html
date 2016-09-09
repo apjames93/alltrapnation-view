@@ -14,18 +14,39 @@
     <body>
 
 
-      <div class="container-fluid">
-      <div class="row">
-        <side-nav></side-nav>
-        <top-name></top-name>
-        <right-portal></right-portal>
-      <div class="col-xs-12 col-sm-offset-3 col-sm-9 content">
-        <div ui-view></div>
+    <div class="container-fluid">
+    <div class="row">
+      <side-nav></side-nav>
+      <top-name></top-name>
+      <div class="col-xs-9 col-sm-offset-2 col-sm-9 content">
+
+        <div class="col-xs-10 ">
+<div ui-view></div>
+        </div>
+
+        <div class="col-xs-2 right-portal-box">
+            <right-portal></right-portal>
+        </div>
+
       </div>
-        <portal-footer></portal-footer>
     </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <footer>
+          <copy-right></copy-right>
+        </footer>
+      </div>
+
     </div>
-  <nav-mobile></nav-mobile>
+  </div>
+  <!-- <div class="row">
+    <footer>
+      <copy-right></copy-right>
+    </footer>
+  </div> -->
+
+
+
 
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>

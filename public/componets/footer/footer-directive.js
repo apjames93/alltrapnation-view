@@ -1,12 +1,12 @@
 (function(){
   angular
     .module('alltrapnation.footer.footer-directive', [])
-    .directive('portalFooter', portalFooter);
+    .directive('copyRight', copyRight);
 
-    function portalFooter(){
+    function copyRight(){
       var directive = {
         restrict: 'E',
-        templateUrl: '/templates/portalFooter.html',
+        templateUrl: '/templates/copyRight.html',
         scope: {},
       };
       return directive;

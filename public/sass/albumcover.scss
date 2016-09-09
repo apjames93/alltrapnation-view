@@ -1,39 +1,33 @@
-.card-container{
-  padding: 0;
-  margin: 2em;;
-}
- .card-img-top{
-   height: auto;
-   width: 100%;
-   opacity: 1;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-  height: 45%;
-  background-image: url("http://nme.assets.ipccdn.co.uk/images/2015EaglesOfDeathMetal_EODM_ZipperDown_170615.article_x4.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
- }
- .card-img-top:hover {
-   cursor: pointer;
-   opacity: 0.5;
- }
 
- .card{
- vertical-align: middle;
- width: auto;
+.albumcover-box{
+  position: relative;
+  display: block;
+  align-content: center;
+  margin-bottom: 1em;
+  height: auto;
+  width: auto;
+  padding-left: 0px;
+  padding-right: 0px !important;
 }
-.card:hover {
+.albumcover-box:hover{
   cursor: pointer;
-  -webkit-box-shadow: 14px 20px 34px 0px rgba(0,0,0,0.75);
- -moz-box-shadow: 14px 20px 34px 0px rgba(0,0,0,0.75);
- box-shadow: 14px 20px 34px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 14px 20px 34px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 14px 20px 34px 0px rgba(0,0,0,0.75);
+   box-shadow: 14px 20px 34px 0px rgba(0,0,0,0.75);
 
 }
+.album-img{
+  height: auto;
+  width: 100%;
+  opacity: 1;
+  padding-right: 0;
+ transition: opacity .25s ease-in-out;
+ -moz-transition: opacity .25s ease-in-out;
+ -webkit-transition: opacity .25s ease-in-out;
 
+}
+.album-img:hover{
+  cursor: pointer;
+   opacity: 0.5;
 
-.albumBackground{
-  background-image: url("https://nme.assets.ipccdn.co.uk/images/2015EaglesOfDeathMetal_EODM_ZipperDown_170615.article_x4.jpg");
-  background-repeat: no-repeat;
 }
