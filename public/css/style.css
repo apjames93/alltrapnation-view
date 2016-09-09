@@ -1,3 +1,10 @@
+html {
+  width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
 .container-fluid {
   padding: 0px; }
 
@@ -40,7 +47,7 @@ button {
 .logo-img {
   height: 10em;
   width: auto;
-  margin-left: .2em; }
+  margin-left: .6em; }
 
 .logo-svg {
   height: 100%;
@@ -118,6 +125,22 @@ button {
   margin-left: 1em;
   margin-top: 1em; }
 
+.copyRight {
+  margin-top: 3em;
+  margin-left: 3em;
+  position: absolute;
+  bottom: 0; }
+
+.copyRight-top {
+  margin-top: 3em;
+  margin-left: 3em; }
+
+.logo-img-top {
+  height: 25%;
+  width: 25%;
+  float: right;
+  margin-right: 2em; }
+
 .footer {
   background-color: #EBF5EE;
   margin-bottom: 60px; }
@@ -154,7 +177,7 @@ button {
 
 .card-container {
   padding: 0;
-  margin: 0; }
+  margin: 2em; }
 
 .card-img-top {
   height: auto;

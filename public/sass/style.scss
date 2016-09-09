@@ -1,6 +1,12 @@
 @import 'color';
 @import 'mixins';
-
+html{
+  width: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
 .container-fluid{
   padding: 0px;
 }
