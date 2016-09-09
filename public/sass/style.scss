@@ -1,3 +1,21 @@
 @import 'color';
-@import 'sidenav';
 @import 'rightPortal';
+@import 'sidenav';
+
+.container-fluid{
+  padding: 0px;
+}
+h1 {
+  font-size: 1.3em;
+  margin-top: .2em;
+  margin-bottom: .2em;
+  width: 100%;
+}
+
+h4{
+  width: 100%;
+}
+
+button{
+  width: 100%;
+}

@@ -4,7 +4,8 @@
     .module('alltrapnation',[
      'ui.router',
      'alltrapnation.sidenav',
-     'alltrapnation.rightportal'
+     'alltrapnation.rightportal',
+     'alltrapnation.albumecover'
    ])
 
    .run([
