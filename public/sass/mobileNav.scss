@@ -9,8 +9,11 @@
 .bottom-nav-container a button{
   height: 60px;
   width: 100%;
+  -webkit-box-shadow: 7px 0px 15px 0px rgba(10,17,40,0.28);
+  -moz-box-shadow: 7px 0px 15px 0px rgba(10,17,40,0.28);
+  box-shadow: 7px 0px 15px 0px rgba(10,17,40,0.28);
 }
-.bottom-links{ 
+.bottom-links{
   position: relative;
   background-color: $white;
   border: none;
