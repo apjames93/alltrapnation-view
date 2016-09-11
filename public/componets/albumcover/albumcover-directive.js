@@ -8,7 +8,7 @@
         restrict: 'E',
         templateUrl: '/templates/albumcover.html',
         scope: {
-          data : '='
+          album: '='
         },
         controller: albumecoverController,
         controllerAs: 'albumecoverController'
@@ -16,8 +16,19 @@
       return directive;
 }
 
-  albumecoverController.$inject = ['albumecoverService'];
+  albumecoverController.$inject = ['albumecoverService', '$scope'];
 
-  function albumecoverController(albumecoverService) {
+  function albumecoverController(albumecoverService, $scope) {
+    _init = function() {
+      _getdata();
+    };
+
+    _getdata = function(){
+      // $scope.artistInfo= albumecoverService.info();
+      // console.log($scope.artistInfo);
+    };
+
+
+    _init();
   }
 })();

@@ -1,5 +1,14 @@
 
 <div class="row">
-  <albumecover></albumecover>
+
+<div class="" ng-repeat="album in artistInfo">
+  <div class="col-xs-12 col-sm-6 album-container">
+    <h5 class="album-song">{{album.song}}</h5>
+    <h5 class='album-artist'>{{album.artist}}</h5>
+    <a ui-sref="Releases">
+      <img class='album-img' src="{{album.img}}" alt="" />
+    </a>
+  </div>
+</div>
 
 </div>

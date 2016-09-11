@@ -1,12 +1,10 @@
 html {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 * {
   margin: 0;
   padding: 0; }
-
-.container-fluid {
-  padding: 0px; }
 
 body {
   background-color: #F5F5F5; }
@@ -29,8 +27,7 @@ button {
   background-color: #F5F5F5;
   color: #2C302E;
   overflow-y: scroll;
-  z-index: 1;
-  padding: 0px; }
+  z-index: 1; }
 
 .sideNav-title {
   height: 10%;
@@ -121,7 +118,9 @@ button {
 
 .topName {
   margin-left: 1em;
-  margin-top: 1em; }
+  margin-top: 1em;
+  height: auto;
+  width: 100%; }
 
 .copyRight {
   margin-top: 3em;
@@ -180,8 +179,8 @@ button {
   width: auto; }
 
 .svg-portal {
-  height: 2em;
-  width: auto;
+  height: 28px;
+  width: 28px;
   float: right !important; }
 
 .svg-portal:hover {
@@ -189,18 +188,18 @@ button {
 
 .right-svg-box {
   background-color: #F5F5F5;
-  padding-left: 0;
-  padding-right: 0; }
+  height: 28px;
+  width: 28px; }
 
 .right-svg-box:hover {
   background: #2C302E; }
+  .right-svg-box:hover .svg-portal {
+    fill: white; }
 
 .right-portal-box {
-  position: relative;
-  left: 15%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%); }
+  position: fixed;
+  right: 0;
+  top: 0; }
 
 .albumcover-box {
   position: relative;
@@ -223,10 +222,43 @@ button {
   width: 100%;
   opacity: 1;
   padding-right: 0;
+  margin-bottom: 1em;
+  background-image: url();
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out; }
 
-.album-img:hover {
+.album-artist {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px; }
+
+.album-song {
+  display: none;
+  position: absolute;
+  top: 5px;
+  left: 20px; }
+
+.album-container:hover .album-img {
   cursor: pointer;
-  opacity: 0.5; }
+  opacity: 0.5;
+  -webkit-box-shadow: 14px 20px 34px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 14px 20px 34px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 14px 20px 34px 0px rgba(0, 0, 0, 0.75); }
+
+.album-container:hover .album-song, .album-container:hover .album-artist {
+  display: block; }
+
+img {
+  margin: auto;
+  width: 400px; }
+
+#slides_control {
+  position: relative;
+  width: 100%;
+  margin-top: 20px; }
+
+.carousel {
+  height: auto;
+  width: 100%; }

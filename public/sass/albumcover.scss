@@ -21,13 +21,40 @@
   width: 100%;
   opacity: 1;
   padding-right: 0;
+  margin-bottom: 1em;
+  background-image: url();
  transition: opacity .25s ease-in-out;
  -moz-transition: opacity .25s ease-in-out;
  -webkit-transition: opacity .25s ease-in-out;
 
 }
-.album-img:hover{
-  cursor: pointer;
-   opacity: 0.5;
 
+.album-artist {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.album-song {
+  display: none;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+
+.album-container {
+  &:hover {
+    .album-img {
+      cursor: pointer;
+       opacity: 0.5;
+       -webkit-box-shadow: 14px 20px 34px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 14px 20px 34px 0px rgba(0,0,0,0.75);
+      box-shadow: 14px 20px 34px 0px rgba(0,0,0,0.75);
+    }
+
+    .album-song, .album-artist {
+      display: block;
+    }
+  }
 }

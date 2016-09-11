@@ -3,6 +3,7 @@
   angular
     .module('alltrapnation',[
      'ui.router',
+     'ui.bootstrap',
      'alltrapnation.sidenav',
      'alltrapnation.rightportal',
      'alltrapnation.mobileNav',
@@ -24,12 +25,13 @@
       $stateProvider
         .state('home',{
           url: '/',
-          templateUrl: '/templates/home.html'
-          // controller: 'homeController'
+          templateUrl: '/templates/home.html',
+          controller: 'homeController'
         })
-        .state('art', {
-          url: '/art',
-          templateUrl: '/templates/art.html'
+        .state('Releases', {
+          url: '/Releases',
+          templateUrl: '/templates/art.html',
+          controller: 'homeController'
         })
         .state('about', {
           url: '/about',

@@ -17,8 +17,8 @@
   width: auto;
 }
 .svg-portal{
-  height: 2em;
-  width: auto;
+  height: 28px;
+  width: 28px;
   float: right !important;
 }
 .svg-portal:hover{
@@ -26,17 +26,17 @@
 }
 .right-svg-box{
   background-color: $white;
-  padding-left: 0;
-  padding-right: 0;
-
+  height: 28px;
+  width: 28px;
 }
 .right-svg-box:hover{
   background: $black;
+  .svg-portal{
+    fill: white;
+  }
 }
 .right-portal-box{
-  position: relative;
-left: 15%;
--webkit-transform: translateX(-50%);
--ms-transform: translateX(-50%);
-transform: translateX(-50%);
+  position: fixed;
+  right: 0;
+  top: 0;
 }
