@@ -6,6 +6,13 @@ html {
   margin: 0;
   padding: 0; }
 
+.ui-box {
+  padding: 0 30px;
+  height: 100%; }
+
+.content {
+  height: 100%; }
+
 body {
   background-color: #F5F5F5; }
 
@@ -198,7 +205,7 @@ button {
 
 .right-portal-box {
   position: fixed;
-  right: 0;
+  right: 8px;
   top: 0; }
 
 .albumcover-box {
