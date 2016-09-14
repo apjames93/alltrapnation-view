@@ -1,20 +1,26 @@
-  <div class="col-xs-12 col-sm-8">
-    <div  id="slides_control">
+ <p><input type="text" ng-model="test" ng-init=''></p>
 
-        <carousel class="carousel">
-          <slide  class="albumcover-box" ng-repeat="album in artistInfo" active="slide.active">
-            <img class="album-img" ng-src="{{album.img}}">
-            <div class="carousel-caption">
-              <h4>{{$index+1}}</h4>
-            </div>
-          </slide>
-        </carousel>
-
+    <div class="col-xs-12 col-sm-8 ">
+      <div  id="slides_control">
+          <carousel class="carousel">
+            <slide  class="albumcover-box" ng-repeat='artist in artistInfo| filter:test' ng-mouseenter='slideInfo(artist.artistName, artist.songName, artist.albumName)' active="slide.active">
+              <img class="album-img" ng-src="{{artist.albumImg}}" >
+              <div class="carousel-caption">
+                <h4>{{$index+1}}</h4>
+                <h4>{{artist.artistName}}</h4>
+              </div>
+            </slide>
+          </carousel>
+      </div>
     </div>
-    <h5> <span class='album-inf'>{{album.song}}</span> </h5>
-    <h5 class='album-inf'>{{album.artist}}</h5>
-
-  </div>
-  <div class="col-xs-12 col-sm-4">
-    album text goes here
-  </div>
+    <div class="col-xs-12 col-sm-4">
+      <p>
+        {{artistName}}
+      </p>
+      <p>
+        {{songName}}
+      </p>
+      <p>
+        {{albumName}}
+      </p>
+    </div>

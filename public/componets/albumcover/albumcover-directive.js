@@ -1,33 +1,25 @@
 (function(){
   angular
-    .module('alltrapnation.albumecover.albumecover-directive', [])
-    .directive('albumecover', albumecover);
+    .module('alltrapnation.albumCover.albumCover-directive', [])
+    .directive('albumCover', albumCover);
 
-    function albumecover(){
+    function albumCover(){
       var directive = {
         restrict: 'E',
         templateUrl: '/templates/albumcover.html',
-        scope: {
-          album: '='
-        },
-        controller: albumecoverController,
-        controllerAs: 'albumecoverController'
+        scope: {},
+        controller: homeController,
+        controllerAs: 'homeController'
       };
       return directive;
 }
 
-  albumecoverController.$inject = ['albumecoverService', '$scope'];
+  albumCoverController.$inject = ['albumCoverService', '$scope'];
 
-  function albumecoverController(albumecoverService, $scope) {
+  function albumCoverController(albumCoverService, $scope) {
+
     _init = function() {
-      _getdata();
     };
-
-    _getdata = function(){
-      // $scope.artistInfo= albumecoverService.info();
-      // console.log($scope.artistInfo);
-    };
-
 
     _init();
   }

@@ -1,7 +1,8 @@
 .footer {
   background-color: $gray;
   margin-bottom: 0px;
-  position: absolute;
+  margin-top: 15px;
+  position: fixed;
   z-index: 2;
   color: $white;
   height: 2em;
@@ -9,6 +10,7 @@
   // bottom: 0;
   padding: 0;
   width: 100%;
+  bottom: 0;
 }
 .footer-svg {
   position: relative;

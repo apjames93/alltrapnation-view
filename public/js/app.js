@@ -4,12 +4,14 @@
     .module('alltrapnation',[
      'ui.router',
      'ui.bootstrap',
+     'alltrapnation.login',
      'alltrapnation.sidenav',
      'alltrapnation.rightportal',
      'alltrapnation.mobileNav',
      'alltrapnation.topName',
      'alltrapnation.footer',
-     'alltrapnation.albumecover'
+     'alltrapnation.albumCover',
+     'alltrapnation.edit'
    ])
 
    .run([
@@ -36,6 +38,16 @@
         .state('about', {
           url: '/about',
           templateUrl: '/templates/about.html'
-        });
+        })
+        .state('admin' , {
+          url: '/admin',
+          templateUrl: 'templates/admin.html'
+        })
+         .state('edit' , {
+              url: '/edit',
+              templateUrl: 'templates/edit.html',
+              controller: 'editController'
+
+          });
       });
 })();

@@ -147,13 +147,15 @@ button {
 .footer {
   background-color: #474A48;
   margin-bottom: 0px;
-  position: absolute;
+  margin-top: 15px;
+  position: fixed;
   z-index: 2;
   color: #F5F5F5;
   height: 2em;
   text-align: center;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  bottom: 0; }
 
 .footer-svg {
   position: relative; }
@@ -228,9 +230,8 @@ button {
   height: auto;
   width: 100%;
   opacity: 1;
-  padding-right: 0;
-  margin-bottom: 1em;
-  background-image: url();
+  margin-bottom: 15px;
+  margin-top: 15px;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out; }

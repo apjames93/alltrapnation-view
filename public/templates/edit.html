@@ -1,0 +1,67 @@
+
+<!-- <div class="col-xs-12"ng-repeat='artist in artistInfo'>
+  <edit></edit>
+</div> -->
+<form ng-submit='addInfo(artistName, albumName, albumImg, songName)'>
+  <label for="artistName">artist name</label>
+  <input ng-model='artistName' type="text" class="validate" >
+
+  <label for="albumName">album Name:</label>
+  <input ng-model='albumName' type="text" class="validate">
+
+  <label for="albumImg">album image:</label>
+  <input ng-model='albumImg' type="text" class="validate">
+
+  <label for="songName">song name:</label>
+  <input ng-model='songName' type="text" class="validate">
+
+
+  <button class="btn" type ='submit' name="button">add new artist info</button>
+
+</form>
+
+
+<!-- <div class="row">
+  <div class="col-xs-12"ng-repeat='artist in artistInfo'>
+    <button class='btn'type="button" ng-click='deleteInfo(artist.album_id, artist.artist_id, artist.id)'> delete</button>
+  <div class="col-xs-12 col-sm-6">
+    <img src="{{artist.albumImg}}" alt="" />
+  </div>
+  <div class="col-xs-12 col-sm-6">
+    <p>
+      artist name :
+      <br>
+      <h3>{{artist.artistName}}</h3>
+    </p>
+    <p>
+      album name:
+      <br>
+      <h3>{{artist.albumName}}</h3>
+    </p>
+    <p>
+      song name;
+      <br>
+      <h3>{{artist.songName}}</h3>
+    </p>
+  </div>
+    <form ng-submit='edit(artistName, albumName, albumImg, songName, artist.album_id, artist.artist_id, artist.id)'>
+      <label for="artistName">artist name</label>
+      <input ng-model='artistName' type="text" class="validate" ng-value='artist.artistName'>
+
+      <label for="albumName">album Name:</label>
+      <input ng-model='albumName' type="text" class="validate" ng-value='artist.albumName'>
+
+      <label for="albumImg">album image:</label>
+      <input ng-model='albumImg' type="text" class="validate" ng-value='artist.albumImg'>
+
+      <label for="songName">song name:</label>
+      <input ng-model='songName' type="text" class="validate" ng-value='artist.songName'>
+
+
+      <button class="btn" type ='submit' name="button">Edit info</button>
+
+    </form>
+
+</div>
+
+</div> -->

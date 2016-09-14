@@ -1,7 +1,7 @@
 "use strict"
 
   angular
-    .module('alltrapnation.albumecover', [
-      'alltrapnation.albumecover.albumecover-directive',
-      'alltrapnation.albumecover.albumecover-service'
+    .module('alltrapnation.albumCover', [
+      'alltrapnation.albumCover.albumCover-directive',
+      'alltrapnation.albumCover.albumCover-service'
   ]);

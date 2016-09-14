@@ -1,11 +1,10 @@
 
-
-<div class="" ng-repeat="album in artistInfo">
+<div class="" ng-repeat="artist in artistInfo">
   <div class="col-xs-12 col-sm-6 album-container">
-    <h5 class="album-song">{{album.song}}</h5>
-    <h5 class='album-artist'>{{album.artist}}</h5>
-    <a ui-sref="Releases">
-      <img class='album-img' src="{{album.img}}" alt="" />
+    <h5 class="album-song">{{artist.songName}}</h5>
+    <h5 class='album-artist'>{{artist.artistName}}</h5>
+    <a ui-sref="Releases" ng-click='artistLookUp(artist.id)'>
+      <img class='album-img' src="{{artist.albumImg}}" alt="" />
     </a>
   </div>
 </div>
