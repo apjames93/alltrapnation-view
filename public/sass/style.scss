@@ -32,7 +32,11 @@ h4{
 button{
   width: 100%;
 }
-
+.map{
+  width: 90%;
+  height: 250px;
+  margin-bottom: 15px;
+}
 @import 'sidenav';
 @import 'mobileNav';
 @import 'footer';

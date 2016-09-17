@@ -28,6 +28,11 @@ h4 {
 button {
   width: 100%; }
 
+.map {
+  width: 90%;
+  height: 250px;
+  margin-bottom: 15px; }
+
 .sidenav {
   position: fixed;
   height: 100%;
@@ -210,6 +215,23 @@ button {
   right: 8px;
   top: 0; }
 
+.about-svg-box {
+  background-color: #F5F5F5;
+  height: 28px;
+  width: 28px;
+  margin-top: 15px; }
+
+.about-svg-box:hover {
+  background: #2C302E; }
+  .about-svg-box:hover .svg-portal {
+    fill: white; }
+
+.album-info {
+  margin-top: 15px; }
+
+.search {
+  margin-top: 15px; }
+
 .albumcover-box {
   position: relative;
   display: block;
@@ -236,6 +258,11 @@ button {
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out; }
 
+.album-img:hover {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05); }
+
 .album-artist {
   display: none;
   position: absolute;
@@ -257,6 +284,23 @@ button {
 
 .album-container:hover .album-song, .album-container:hover .album-artist {
   display: block; }
+
+.seach-bar {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  right: 0;
+  margin: 5px;
+  padding: 10px 20px;
+  color: #F5F5F5;
+  text-overflow: clip;
+  background: #2C302E;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
 
 img {
   margin: auto;

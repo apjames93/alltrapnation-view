@@ -1,0 +1,17 @@
+    <div class="row" ng-repeat='album in artistData| filter:test'>
+      <div class="col-xs-12 col-sm-8">
+        <img class="album-img" ng-src="{{album.albumImg}}" >
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <p>
+          {{album.artistName}}
+        </p>
+        <p>
+          {{album.songName}}
+        </p>
+        <p>
+          {{album.albumName}}
+        </p>
+      </div>
+
+    </div>

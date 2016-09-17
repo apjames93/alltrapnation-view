@@ -1,11 +1,25 @@
-<div  id="slides_control">
-    <carousel class="carousel">
-      <slide  class="albumcover-box" ng-repeat="album in artistInfo" active="slide.active">
-        <img class="album-img" ng-src="{{album.img}}">
-        <div class="carousel-caption">
-          <h4>{{$index+1}}</h4>
-        </div>
-      </slide>
-    </carousel>
 
+<div class="row">
+  <div class="col-xs-12 search ">
+      <!-- <label for="search">Search Artist:</label> -->
+    <input class= "seach-bar" type="text" ng-model="search" placeholder="Search Artist">
+
+  </div>
+</div>
+
+<div class="row" ng-repeat='artist in albumInfo| filter:search'>
+  <div class="col-xs-12 col-sm-8 ">
+    <img class="album-img" ng-src="{{artist.albumImg}}" >
+  </div>
+  <div class="col-xs-12 col-sm-4 album-info">
+    <p>
+      {{artist.artistName}}
+    </p>
+    <p>
+      {{artist.songName}}
+    </p>
+    <p>
+      {{artist.albumName}}
+    </p>
+  </div>
 </div>

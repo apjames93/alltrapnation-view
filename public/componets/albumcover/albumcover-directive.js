@@ -8,8 +8,8 @@
         restrict: 'E',
         templateUrl: '/templates/albumcover.html',
         scope: {},
-        controller: homeController,
-        controllerAs: 'homeController'
+        controller: albumCoverController,
+        controllerAs: 'albumCoverController'
       };
       return directive;
 }
@@ -19,6 +19,16 @@
   function albumCoverController(albumCoverService, $scope) {
 
     _init = function() {
+      _getdata();
+    };
+
+
+    _getdata = function(){
+      albumCoverService.getAlbumInfo()
+      .then(function(data){
+        $scope.albumInfo = data;
+      });
+
     };
 
     _init();

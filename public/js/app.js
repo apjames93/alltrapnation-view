@@ -3,7 +3,8 @@
   angular
     .module('alltrapnation',[
      'ui.router',
-     'ui.bootstrap',
+    //  'slickCarousel',
+      'ui.bootstrap',
      'alltrapnation.login',
      'alltrapnation.sidenav',
      'alltrapnation.rightportal',
@@ -11,7 +12,8 @@
      'alltrapnation.topName',
      'alltrapnation.footer',
      'alltrapnation.albumCover',
-     'alltrapnation.edit'
+     'alltrapnation.edit',
+     'alltrapnation.artistInfo'
    ])
 
    .run([
@@ -34,6 +36,11 @@
           url: '/Releases',
           templateUrl: '/templates/art.html',
           controller: 'homeController'
+        })
+        .state('artistInfo', {
+          url: '/artistInfo/:id',
+          templateUrl: '/templates/artistInfo.html',
+          // controller: 'homeController'
         })
         .state('about', {
           url: '/about',

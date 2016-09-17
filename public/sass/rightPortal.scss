@@ -40,3 +40,16 @@
   right: 8px;
   top: 0;
 }
+.about-svg-box{
+  background-color: $white;
+  height: 28px;
+  width: 28px;
+  margin-top: 15px;
+}
+
+.about-svg-box:hover{
+  background: $black;
+  .svg-portal{
+    fill: white;
+  }
+}

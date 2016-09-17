@@ -3,9 +3,10 @@
     .module('alltrapnation')
     .controller('homeController', homeController);
 
-    homeController.$inject= ['$scope', '$location','albumCoverService',  '$state'];
+    homeController.$inject= ['$scope', '$location','albumCoverService',  '$state', 'artistInfoService'];
 
-    function homeController($scope, $location, albumCoverService, $state){
+    function homeController($scope, $location, albumCoverService, $state, artistInfoService){
+      $scope.artistData = {};
 
       _init = function() {
         _getdata();
@@ -14,31 +15,26 @@
       _getdata = function(){
         albumCoverService.getInfo()
         .then(function(data){
-          console.log(data);
           $scope.artistInfo = data;
         });
       };
 
-      $scope.artistLookUp = function(id, artist, img ){
 
 
-      };
+      // $scope.artistLookUp = function(id) {
+      //   artistInfoService.getArtistInfo(id)
+      //   .then(function(data){
+      //     console.log("lucas", data.user);
+      //     $scope.artistData.album = data.user;
+      //
+      //   });
+      // };
 
-      $scope.testname = function(name){
-        // console.log(name);
-        $scope.slideName = name;
-        return $scope.slideName;
-      };
+      // $scope.artistData = $scope.artistLookUp();
 
-      $scope.slideInfo = function(artistName, songName, albumName){
-        $scope.artistName = artistName;
-        $scope.songName = songName;
-        $scope.albumName = albumName;
-
-      };
+      // $scope.$state = $state;
 
 
-      $scope.$state = $state;
       _init();
     }
 })();

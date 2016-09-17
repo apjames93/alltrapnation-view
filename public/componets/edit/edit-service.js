@@ -12,7 +12,16 @@
         addInfo: addInfo
       };
 
-
+      function getEverything(){
+        var defferred = $q.defer();
+        $http({
+          method: 'get',
+          headers: {
+            Authorization: 'Bearer ' + loginService.getToken()
+          },
+          url: 'http://localhost:3000/api/edit'
+        })
+      }
       function editInfo(artistName, albumName, albumImg, songName, albumId, artistId, songId){
         var deferred = $q.defer();
         $http({
